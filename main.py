@@ -20,7 +20,7 @@ while True:
         break
     comando = process_command(user_input)
     if comando is not None:
-        resposta = comando
+        print(comando)
     else:
         resposta = ask_model(user_input)
         print(resposta)
