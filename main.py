@@ -17,8 +17,9 @@ while True:
     if user_input == "exit":
         print("Encerrando Neo")
         break
-
-    save_memory(user_input)
-
-    resposta = process_command(user_input)
-    print(resposta)
+    elif user_input == "hello" or user_input == "oi" or user_input == "ola" or user_input == "eai":
+        print("Olá, tudo bem?")
+    else:
+        save_memory(user_input)
+        resposta = process_command(user_input)
+        print(resposta)

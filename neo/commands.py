@@ -8,10 +8,7 @@ from services.python_api import consultar_python
 def process_command(command):
     partes = command.split()
 
-    if command == "hello" or command == "oi" or command == "ola" or command == "eai":
-        print("Olá")
-
-    elif command == "status":
+    if command == "status":
         return "Estamos ON no seu Sistema Operacional"
 
     elif command == "help":
@@ -30,7 +27,7 @@ def process_command(command):
     elif command == "system":
         return system_info()
 
-    elif partes[0] == "terminal": ##aceita comandos shell
+    elif partes[0] == "terminal": ## aceita comandos shell
         if len(partes) < 2:
             return "Digite o comando que deseja executar"
         comando = " ".join(partes[1:])
