@@ -14,7 +14,6 @@ def process_command(command):
     elif command == "help":
         return """
            Esses são os meus comandos:
-           - hello, eai, ola, oi -> Cumprimento
            - exit -> Encerro o programa
            - system -> Mostro dados básicos do seu sistema
            
@@ -59,4 +58,4 @@ def process_command(command):
         return consultar_python(topico)
 
     else:
-        return "Não reconheço esse comando cara."
+        return None
