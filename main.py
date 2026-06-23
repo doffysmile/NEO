@@ -3,7 +3,7 @@ from neo.commands import process_command
 from neo.memory import save_memory
 from neo.brain import ask_model
 
-print("Essa é a versão 0.0.1\n")
+print("Essa é a versão 0.0.5\n")
 
 print("Wake up.")
 print("Neo online")
