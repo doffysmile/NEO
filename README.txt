@@ -1,28 +1,50 @@
-Aqui um pequeno README para conectar o Neo ao seu computador.
-Primeiramente RELEVE POIS É UMA VERSÃO 0.0.1 PILOTO
+# NEO 
 
-Neo é um agente, bem simples, que funciona no terminal.
-Para iniciar ele na sua máquina você irá fazer o seguinte
+NEO é um assistente virtual desenvolvido em Python com foco em aprendizado, automação e experimentação com Inteligência Artificial local.
 
-1 - Descompactar (obvio)
-2 - No terminal
-    bash~ cd caminho/neo
-    execute -> nano ~/.local/bin/neo
-    verifique se o arquivo contém o seguinte:
-    #!/bin/bash
-    python3 /caminho/neo/main.py
-    
-    Se estiver tudo okay, faça -> CTRL + O, ENTER, CTRL + X, para salvar e   sair
-3 - Execute -> bash~ chmod +x ~/.local/bin/neo
-4 - Execute -> echo $PATH
-    Deve retornar algo como home/user/.local/bin....
-    Dessa forma o neo já estará pronto para ser usado, basta digitar 'neo' no seu terminal
-    
-    
-5 - Caso não após executar echo $PATH, ele não retornar o caminho, faça o seguinte
-5.1 - Execute novamente -> nano ~/.bashrc
-        E ao final do arquivo escreva -> export PATH="$HOME/.local/bin:$PATH", CTRL + O, ENTER, CTRL + X, para salvar e   sair
-5.2 - Execute -> source ~/.bashrc
+O projeto nasceu como um assistente de terminal e vem evoluindo gradualmente para se tornar um sistema pessoal inteligente, modular e expansível.
 
-Esses ultimos devem resolver.
-        
+---
+
+## Tecnologias utilizadas
+
+* Python 3
+* Integração com API's externas
+* Execução de comandos no terminal
+* Persistência de memória local
+* IA local com [Ollama](https://ollama.com/?utm_source=chatgpt.com)
+* Modelo: Qwen
+
+---
+
+## Funcionalidades atuais
+
+* Consulta de perfil e repositórios do GitHub
+* Informações do sistema operacional
+* Execução de comandos Shell
+* Consultas relacionadas a Java e Python a partir do Stack Overflow
+* Sistema de memória local (não útil e nem acessavel por ele ainda)
+* Conversação com modelo de IA local integrado via Ollama
+
+---
+
+## Versão atual
+
+### v0.0.5
+O principal marco da versão é a integração do Ollama.
+
+Principais mudanças:
+
+* Implementação do Ollama no projeto
+* Integração inicial com modelos LLM locais
+* Estruturação do módulo cognitivo (`brain.py`)
+* Primeiros testes conversacionais com IA embarcada
+
+---
+
+## Objetivo do projeto
+
+Construir um assistente virtual pessoal totalmente modular, capaz de executar tarefas locais, aprender contexto e evoluir gradualmente para um sistema inteligente independente.
+
+---
+
