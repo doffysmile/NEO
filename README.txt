@@ -2,13 +2,11 @@
 
 NEO é um assistente virtual desenvolvido em Python com foco em aprendizado, automação e experimentação com Inteligência Artificial local.
 
-O projeto nasceu como um assistente de terminal e vem evoluindo gradualmente para se tornar um sistema pessoal inteligente, modular e expansível.
-
 ---
 
 ## Tecnologias utilizadas
 
-* Python 3
+* Python 
 * Integração com API's externas
 * Execução de comandos no terminal
 * Persistência de memória local
