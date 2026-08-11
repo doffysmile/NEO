@@ -1,6 +1,6 @@
 # NEO 
 
-NEO é um assistente virtual desenvolvido em Python com foco em aprendizado, automação e experimentação com Inteligência Artificial local.
+NEO é um assistente virtual desenvolvido em Python com foco em aprendizado em Inteligência Artificial local.
 
 ---
 
@@ -36,13 +36,10 @@ Principais mudanças:
 * Implementação do Ollama no projeto
 * Integração inicial com modelos LLM locais
 * Estruturação do módulo cognitivo (`brain.py`)
-* Primeiros testes conversacionais com IA embarcada
-
 ---
 
 ## Objetivo do projeto
 
-Construir um assistente virtual pessoal totalmente modular, capaz de executar tarefas locais, aprender contexto e evoluir gradualmente para um sistema inteligente independente.
-
+Construir um assistente virtual pessoal totalmente modular, que roda em um terminal.
 ---
 
