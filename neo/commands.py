@@ -4,7 +4,7 @@ from services.system_info import system_info
 from services.java_api import consultar_java
 from services.terminal_serv import execute_command
 from services.python_api import consultar_python
-
+from neo.custom import shell
 def process_command(command):
     partes = command.split()
 
@@ -12,23 +12,23 @@ def process_command(command):
         return "Estamos ON no seu Sistema Operacional"
 
     elif command == "help":
-        return """
+        return shell("""
            Esses são os meus comandos:
            - exit -> Encerro o programa
            - system -> Mostro dados básicos do seu sistema
-           
+           - terminal + <comando> -> Executo um comando no terminal
            - java + <topico> -> Consulto informações no Stack Overflow sobre java
-           
+           - python + <topico> -> Consulto informações no Stack Overflow sobre python
            === GITHUB ===
            - github + <username> -> Consulto o perfil do github que você informar.
            - repos + <username> -> Te dou detalhes de repositorios do usuario informado.
-           """
+           """)
     elif command == "system":
         return system_info()
 
     elif partes[0] == "terminal": ## aceita comandos shell
         if len(partes) < 2:
-            return "Digite o comando que deseja executar"
+            return shell("Digite o comando que deseja executar")
         comando = " ".join(partes[1:])
         return execute_command(comando)
 
