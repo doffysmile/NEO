@@ -1,0 +1,21 @@
+Após seguir o passo a passo do Actve.neo.0.0.1
+Aqui temos o upgrade que muito provavelmente vai permanecer durante as próximas versões.
+Ativando o Ollama, o modelo utilizado é o qwen2:1.5b, que vocẽ pode ver e alterar no brain.py
+
+Para ativar o Ollama no Neo é bem simples.
+1 - Baixe o Ollama
+    No seu terminal pode entrar com o seguinte -> bash~ curl -fsSL https://ollama.com/install.sh | sh
+    Teste -> bash~ ollama --version
+    E escolha o seu modelo -> bash~ ollama pull qwen2:1.5b
+
+2 - Rode o Serve do Ollama na sua máquina.
+    Abra outro terminal e execute -> bash~ ollama serve
+    Deve lhe retornar várias linhas de código parecida com isso:
+    time=2026-06-23T18:26:56.152-03:00 level=INFO source=routes.go:1919 
+    msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: 
+    GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: 
+    HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY:.......
+
+3 - Após isso basta você iniciar o Neo e fazer sua primeira perguta a ele, lembrando que deve deixar um terminal para 
+    o servidor Ollama.
+3.1 - Um extra, você pode alterar a, pouca, "personalidade" do Neo dentro de brain.py < SYSTEM_PROMPT = """"""
