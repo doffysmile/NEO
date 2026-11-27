@@ -16,8 +16,6 @@ O NEO é um assistente pessoal de propósito técnico, desenvolvido em Python, c
 
 O projeto busca integrar inteligência artificial local, serviços do sistema operacional, APIs externas e mecanismos de memória persistente em um único ambiente.
 
-Sua filosofia de desenvolvimento fundamenta-se em simplicidade, modularidade, privacidade, autonomia e controle por parte do usuário.
-
 A identidade visual é inspirada no universo de Matrix, preservando a estética clássica dos terminais.
 
 ## Funcionalidades
