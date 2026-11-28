@@ -1,13 +1,4 @@
 # NEO
-
-*Wake up, Neo...*
-
-*The Matrix has you...*
-
-*Follow the white rabbit.*
-
----
-
 **Assistente pessoal | Inteligência artificial local | Interface de terminal**
 
 ## Sobre o projeto
@@ -17,19 +8,6 @@ O NEO é um assistente pessoal de propósito técnico, desenvolvido em Python, c
 O projeto busca integrar inteligência artificial local, serviços do sistema operacional, APIs externas e mecanismos de memória persistente em um único ambiente.
 
 A identidade visual é inspirada no universo de Matrix, preservando a estética clássica dos terminais.
-
-## Funcionalidades
-
-- Interface de terminal desenvolvida com Rich.
-- Identidade visual personalizada.
-- Integração com modelos locais de inteligência artificial através do Ollama.
-- Consulta de informações do sistema operacional.
-- Execução de comandos no terminal.
-- Consulta de perfis e repositórios do GitHub.
-- Pesquisa de informações técnicas sobre Java e Python através do Stack Overflow.
-- Persistência do histórico de comandos.
-- Renderização de respostas em Markdown.
-- Configuração do modelo de inteligência artificial por variável de ambiente.
 
 ## Tecnologias utilizadas
 
@@ -170,6 +148,36 @@ NEO_MODEL=qwen3:8b python main.py
 
 Entradas não reconhecidas como comandos internos são direcionadas ao modelo de inteligência artificial configurado.
 
+## Funcionalidades
+
+**- Interface de terminal desenvolvida com Rich.**
+**- Identidade visual personalizada.**
+  <img width="1008" height="623" alt="image" src="https://github.com/user-attachments/assets/081e1680-ef9a-4e6d-b9ff-353fc1aeff85" />
+
+**- Integração com modelos locais de inteligência artificial através do Ollama:**
+  <img width="1008" height="623" alt="image" src="https://github.com/user-attachments/assets/12b0f656-c9dd-40cf-90da-68b7d40658e7" />
+  
+**- Server Ollama realizando e completando a requisição HTTP á API api/chat:**
+  <img width="1008" height="505" alt="image" src="https://github.com/user-attachments/assets/ab77d6b9-5708-4cd1-a179-28ad11b153cb" />
+  *Registro do processamento de uma requisição HTTP POST ao endpoint /api/chat da API REST do Ollama. A captura demonstra a execução local da inferência, o processamento de tokens, as métricas de desempenho e a conclusão bem-sucedida da requisição, identificada pelo código de status HTTP 200 OK.*
+  
+**- Solicitação de informações fora do escopo dos comandos nativos, respondidos pelo modelo Ollama fazendo busca externa na internet:**
+  <img width="1008" height="539" alt="image" src="https://github.com/user-attachments/assets/de3e0912-50e3-4749-a421-0c6fa6fc8963" />
+  *A captura evidencia a capacidade de interpretação de perguntas em linguagem natural e geração de respostas contextualizadas, apresentando também limitações relacionadas à precisão factual, à coerência linguística e à ocorrência de alucinações.*
+
+**- Consulta de informações do sistema operacional:**
+**- Execução de comandos no terminal.**
+  <img width="1008" height="623" alt="image" src="https://github.com/user-attachments/assets/f06d3198-45cb-478b-9279-7b1d9cf15af9" />
+  *Executado na Home, caso queira realizar comandos como ```cat```, ```ls```, ```mkidr``` em um diretorio especifico, basta iniciar o NEO dentro desse diretorio previamente*
+
+**- Consulta de perfis e repositórios do GitHub:**
+**- Pesquisa de informações técnicas sobre Java e Python através do Stack Overflow.**
+  <img width="1008" height="623" alt="image" src="https://github.com/user-attachments/assets/c2e9629c-851e-462f-8a3c-dab91c4a2551" />
+
+**- Persistência do histórico de comandos:**
+  <img width="1008" height="623" alt="image" src="https://github.com/user-attachments/assets/24e643db-34ec-4ffb-90b2-854295725b6a" />
+  *Demonstração dos registros no diretorio neo/memory.json*
+
 ## Segurança e privacidade
 
 O NEO prioriza a utilização de modelos de inteligência artificial executados localmente, reduzindo a dependência de serviços externos de processamento de linguagem.
@@ -220,5 +228,9 @@ As novas versões serão definidas de acordo com a natureza e o impacto das alte
 
 GitHub: [doffysmile](https://github.com/doffysmile)
 ---
+
+*Wake up, Neo...*
+
+*The Matrix has you...*
 
 *Follow the white rabbit.*
